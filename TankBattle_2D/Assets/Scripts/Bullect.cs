@@ -41,8 +41,11 @@ public class Bullect : MonoBehaviour
 
                 break;
             case "Wall":
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
                 break;
             case "Barrier":
+                Destroy(gameObject);
                 break;
             case "AirBarrier":
                 break;
